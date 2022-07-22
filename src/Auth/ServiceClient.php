@@ -33,7 +33,7 @@ class ServiceClient
 	private $apiEnvironment;
 	private $options;
 
-	private $sandboxServiceClientEndpoints = array(
+	protected $sandboxServiceClientEndpoints = array(
 		ServiceClientType::AdInsightVersion13 => AdInsightServiceSettingsVersion13::SandboxEndpoint,
 		ServiceClientType::BulkVersion13 => BulkServiceSettingsVersion13::SandboxEndpoint,
 		ServiceClientType::CampaignManagementVersion13 => CampaignManagementServiceSettingsVersion13::SandboxEndpoint,
@@ -42,7 +42,7 @@ class ServiceClient
 		ServiceClientType::ReportingVersion13 => ReportingServiceSettingsVersion13::SandboxEndpoint
 	);
 
-	private $productionServiceClientEndpoints = array(
+	protected $productionServiceClientEndpoints = array(
 		ServiceClientType::AdInsightVersion13 => AdInsightServiceSettingsVersion13::ProductionEndpoint,
 		ServiceClientType::BulkVersion13 => BulkServiceSettingsVersion13::ProductionEndpoint,
 		ServiceClientType::CampaignManagementVersion13 => CampaignManagementServiceSettingsVersion13::ProductionEndpoint,
@@ -51,7 +51,7 @@ class ServiceClient
 		ServiceClientType::ReportingVersion13 => ReportingServiceSettingsVersion13::ProductionEndpoint
 	);
 
-	private $serviceClientNamespaces = array(
+	protected $serviceClientNamespaces = array(
 		ServiceClientType::AdInsightVersion13 => AdInsightServiceSettingsVersion13::ServiceNamespace,
 		ServiceClientType::BulkVersion13 => BulkServiceSettingsVersion13::ServiceNamespace,
 		ServiceClientType::CampaignManagementVersion13 => CampaignManagementServiceSettingsVersion13::ServiceNamespace,
