@@ -32,8 +32,10 @@ class ServiceClient
 	private $namespace;
 	private $apiEnvironment;
 	private $options;
+	
+	protected $class = \SoapClient;
 
-	protected $sandboxServiceClientEndpoints = array(
+	private $sandboxServiceClientEndpoints = array(
 		ServiceClientType::AdInsightVersion13 => AdInsightServiceSettingsVersion13::SandboxEndpoint,
 		ServiceClientType::BulkVersion13 => BulkServiceSettingsVersion13::SandboxEndpoint,
 		ServiceClientType::CampaignManagementVersion13 => CampaignManagementServiceSettingsVersion13::SandboxEndpoint,
@@ -42,7 +44,7 @@ class ServiceClient
 		ServiceClientType::ReportingVersion13 => ReportingServiceSettingsVersion13::SandboxEndpoint
 	);
 
-	protected $productionServiceClientEndpoints = array(
+	private $productionServiceClientEndpoints = array(
 		ServiceClientType::AdInsightVersion13 => AdInsightServiceSettingsVersion13::ProductionEndpoint,
 		ServiceClientType::BulkVersion13 => BulkServiceSettingsVersion13::ProductionEndpoint,
 		ServiceClientType::CampaignManagementVersion13 => CampaignManagementServiceSettingsVersion13::ProductionEndpoint,
@@ -51,7 +53,7 @@ class ServiceClient
 		ServiceClientType::ReportingVersion13 => ReportingServiceSettingsVersion13::ProductionEndpoint
 	);
 
-	protected $serviceClientNamespaces = array(
+	private $serviceClientNamespaces = array(
 		ServiceClientType::AdInsightVersion13 => AdInsightServiceSettingsVersion13::ServiceNamespace,
 		ServiceClientType::BulkVersion13 => BulkServiceSettingsVersion13::ServiceNamespace,
 		ServiceClientType::CampaignManagementVersion13 => CampaignManagementServiceSettingsVersion13::ServiceNamespace,
@@ -261,7 +263,7 @@ class ServiceClient
 
 		$mergedOptions = array_merge($default_options, $this->options);
 
-		$proxy = @new SOAPClient($this->wsdlUrl, $mergedOptions);
+		$proxy = @new $this->class($this->wsdlUrl, $mergedOptions);
 
 		$proxy->__setSoapHeaders($headers);
 
