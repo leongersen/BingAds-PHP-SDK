@@ -33,7 +33,7 @@ class ServiceClient
 	private $apiEnvironment;
 	private $options;
 	
-	protected $class = \SoapClient;
+	protected $class = \SoapClient::class;
 
 	private $sandboxServiceClientEndpoints = array(
 		ServiceClientType::AdInsightVersion13 => AdInsightServiceSettingsVersion13::SandboxEndpoint,
