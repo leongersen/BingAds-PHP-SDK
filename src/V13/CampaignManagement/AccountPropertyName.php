@@ -50,6 +50,12 @@ namespace Microsoft\BingAds\V13\CampaignManagement;
 
         /** Used to get or set the property that determines the account's business attributes meant to help you boost ad performance. */
         const BusinessAttributes = 'BusinessAttributes';
+
+        /** Reserved. */
+        const EnableMMAUnderDSAAdgroups = 'EnableMMAUnderDSAAdgroups';
+
+        /** Reserved. */
+        const OptOutFromMCM = 'OptOutFromMCM';
     }
 
 }
