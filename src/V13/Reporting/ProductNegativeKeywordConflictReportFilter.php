@@ -5,10 +5,11 @@ namespace Microsoft\BingAds\V13\Reporting;
 {
     /**
      * Defines the criteria to use to filter the product negative keyword conflict report data.
-     * @link https://docs.microsoft.com/en-us/advertising/reporting-service/productnegativekeywordconflictreportfilter?view=bingads-13 ProductNegativeKeywordConflictReportFilter Data Object
+     * @link https:/learn.microsoft.com/advertising/reporting-service/productnegativekeywordconflictreportfilter?view=bingads-13 ProductNegativeKeywordConflictReportFilter Data Object
      * 
      * @uses AccountStatusReportFilter
      * @uses AdGroupStatusReportFilter
+     * @uses AssetGroupStatusReportFilter
      * @uses CampaignStatusReportFilter
      * @used-by ProductNegativeKeywordConflictReportRequest
      */
@@ -25,6 +26,12 @@ namespace Microsoft\BingAds\V13\Reporting;
          * @var AdGroupStatusReportFilter
          */
         public $AdGroupStatus;
+
+        /**
+         * The report will include data for only the asset group status.
+         * @var AssetGroupStatusReportFilter
+         */
+        public $AssetGroupStatus;
 
         /**
          * The report will only include data for campaigns with the specified status.

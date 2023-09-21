@@ -5,11 +5,12 @@ namespace Microsoft\BingAds\V13\Reporting;
 {
     /**
      * Defines the criteria to use to filter the geographic performance report data.
-     * @link https://docs.microsoft.com/en-us/advertising/reporting-service/geographicperformancereportfilter?view=bingads-13 GeographicPerformanceReportFilter Data Object
+     * @link https:/learn.microsoft.com/advertising/reporting-service/geographicperformancereportfilter?view=bingads-13 GeographicPerformanceReportFilter Data Object
      * 
      * @uses AccountStatusReportFilter
      * @uses AdDistributionReportFilter
      * @uses AdGroupStatusReportFilter
+     * @uses AssetGroupStatusReportFilter
      * @uses CampaignStatusReportFilter
      * @uses LanguageReportFilter
      * @used-by GeographicPerformanceReportRequest
@@ -33,6 +34,12 @@ namespace Microsoft\BingAds\V13\Reporting;
          * @var AdGroupStatusReportFilter
          */
         public $AdGroupStatus;
+
+        /**
+         * The report will include data for only the asset group status.
+         * @var AssetGroupStatusReportFilter
+         */
+        public $AssetGroupStatus;
 
         /**
          * The report will include data for only the campaign status.

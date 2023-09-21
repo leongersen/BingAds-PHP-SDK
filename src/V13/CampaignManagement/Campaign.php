@@ -5,7 +5,7 @@ namespace Microsoft\BingAds\V13\CampaignManagement;
 {
     /**
      * Defines a campaign.
-     * @link https://docs.microsoft.com/en-us/advertising/campaign-management-service/campaign?view=bingads-13 Campaign Data Object
+     * @link https:/learn.microsoft.com/advertising/campaign-management-service/campaign?view=bingads-13 Campaign Data Object
      * 
      * @uses BiddingScheme
      * @uses BudgetLimitType
@@ -118,7 +118,7 @@ namespace Microsoft\BingAds\V13\CampaignManagement;
         public $UrlCustomParameters;
 
         /**
-         * The campaign type determines whether the campaign is an Audience, Dynamic Search Ads, Search, or Shopping campaign.
+         * The campaign type determines whether the campaign is an Audience, Dynamic Search Ads, Search, Shopping campaign, Hotel Ads, or Performance Max.
          * @var CampaignType
          */
         public $CampaignType;

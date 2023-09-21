@@ -5,7 +5,7 @@ namespace Microsoft\BingAds\V13\CustomerManagement;
 {
     /**
      * Defines a selection of locale values.
-     * @link https://docs.microsoft.com/en-us/advertising/customer-management-service/lcid?view=bingads-13 LCID Value Set
+     * @link https:/learn.microsoft.com/advertising/customer-management-service/lcid?view=bingads-13 LCID Value Set
      * 
      * @used-by User
      * @used-by UserInvitation
@@ -114,6 +114,9 @@ namespace Microsoft\BingAds\V13\CustomerManagement;
         /** English (Vietnam) */
         const EnglishVietnam = 'EnglishVietnam';
 
+        /** Chinese (China) */
+        const ChineseChina = 'ChineseChina';
+
         /** German (Switzerland) */
         const GermanSwitzerland = 'GermanSwitzerland';
 
@@ -123,7 +126,7 @@ namespace Microsoft\BingAds\V13\CustomerManagement;
         /** Spanish (Mexico) */
         const SpanishMexico = 'SpanishMexico';
 
-        /** Chinese (Hong Kong) */
+        /** Chinese (Hong Kong SAR) */
         const ChineseHongKong = 'ChineseHongKong';
 
         /** German (Austria) */

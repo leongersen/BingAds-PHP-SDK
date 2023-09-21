@@ -5,7 +5,7 @@ namespace Microsoft\BingAds\V13\Reporting;
 {
     /**
      * Defines the attributes and performance statistics columns that you can include in the HotelGroupPerformanceReportRequest.
-     * @link https://docs.microsoft.com/en-us/advertising/reporting-service/hotelgroupperformancereportcolumn?view=bingads-13 HotelGroupPerformanceReportColumn Value Set
+     * @link https:/learn.microsoft.com/advertising/reporting-service/hotelgroupperformancereportcolumn?view=bingads-13 HotelGroupPerformanceReportColumn Value Set
      * 
      * @used-by HotelGroupPerformanceReportRequest
      */
@@ -151,6 +151,9 @@ namespace Microsoft\BingAds\V13\Reporting;
 
         /** The number of impressions lost for all other reasons. */
         const MissedImpressionsOther = 'MissedImpressionsOther';
+
+        /** Reserved. */
+        const ClickShare = 'ClickShare';
     }
 
 }

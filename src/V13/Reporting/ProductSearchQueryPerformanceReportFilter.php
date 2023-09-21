@@ -5,12 +5,13 @@ namespace Microsoft\BingAds\V13\Reporting;
 {
     /**
      * Defines the criteria to use to filter the product search query performance report data.
-     * @link https://docs.microsoft.com/en-us/advertising/reporting-service/productsearchqueryperformancereportfilter?view=bingads-13 ProductSearchQueryPerformanceReportFilter Data Object
+     * @link https:/learn.microsoft.com/advertising/reporting-service/productsearchqueryperformancereportfilter?view=bingads-13 ProductSearchQueryPerformanceReportFilter Data Object
      * 
      * @uses AccountStatusReportFilter
      * @uses AdGroupStatusReportFilter
      * @uses AdStatusReportFilter
      * @uses AdTypeReportFilter
+     * @uses AssetGroupStatusReportFilter
      * @uses CampaignStatusReportFilter
      * @uses LanguageReportFilter
      * @used-by ProductSearchQueryPerformanceReportRequest
@@ -40,6 +41,12 @@ namespace Microsoft\BingAds\V13\Reporting;
          * @var AdTypeReportFilter
          */
         public $AdType;
+
+        /**
+         * The report will include data for only the asset group status.
+         * @var AssetGroupStatusReportFilter
+         */
+        public $AssetGroupStatus;
 
         /**
          * The report will include data for campaigns that have the specified status value.

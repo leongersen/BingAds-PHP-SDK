@@ -5,7 +5,7 @@ namespace Microsoft\BingAds\V13\CampaignManagement;
 {
     /**
      * Defines a list of optional conversion goal properties that you can request when calling GetConversionGoalsByIds and GetConversionGoalsByTagIds.
-     * @link https://docs.microsoft.com/en-us/advertising/campaign-management-service/conversiongoaladditionalfield?view=bingads-13 ConversionGoalAdditionalField Value Set
+     * @link https:/learn.microsoft.com/advertising/campaign-management-service/conversiongoaladditionalfield?view=bingads-13 ConversionGoalAdditionalField Value Set
      * 
      * @used-by GetConversionGoalsByIdsRequest
      * @used-by GetConversionGoalsByTagIdsRequest
@@ -26,6 +26,9 @@ namespace Microsoft\BingAds\V13\CampaignManagement;
 
         /** Determines which attribution model, _LastTouch_ or _LastClick_, is used with a conversion goal. */
         const AttributionModelType = 'AttributionModelType';
+
+        /** Determines whether enhanced conversions are enabled for a conversion goal. */
+        const IsEnhancedConversionsEnabled = 'IsEnhancedConversionsEnabled';
     }
 
 }
