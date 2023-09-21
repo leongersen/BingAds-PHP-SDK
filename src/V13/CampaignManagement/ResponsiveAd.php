@@ -5,11 +5,12 @@ namespace Microsoft\BingAds\V13\CampaignManagement;
 {
     /**
      * A responsive ad format for audience ads and multimedia ads.
-     * @link https://docs.microsoft.com/en-us/advertising/campaign-management-service/responsivead?view=bingads-13 ResponsiveAd Data Object
+     * @link https:/learn.microsoft.com/advertising/campaign-management-service/responsivead?view=bingads-13 ResponsiveAd Data Object
      * 
      * @uses CallToAction
      * @uses LanguageName
      * @uses AssetLink
+     * @uses VerifiedTrackingSetting
      */
     final class ResponsiveAd extends Ad
     {
@@ -84,6 +85,12 @@ namespace Microsoft\BingAds\V13\CampaignManagement;
          * @var string
          */
         public $Text;
+
+        /**
+         * Reserved.
+         * @var VerifiedTrackingSetting
+         */
+        public $VerifiedTrackingSettings;
 
         /**
          * Video assets with different sizes and aspect ratios so they can flexibly display across a variety of publishers and placements.

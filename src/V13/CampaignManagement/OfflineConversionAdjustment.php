@@ -5,7 +5,7 @@ namespace Microsoft\BingAds\V13\CampaignManagement;
 {
     /**
      * Defines an object to retract or restate an offline conversion via the ApplyOfflineConversionAdjustments operation.
-     * @link https://docs.microsoft.com/en-us/advertising/campaign-management-service/offlineconversionadjustment?view=bingads-13 OfflineConversionAdjustment Data Object
+     * @link https:/learn.microsoft.com/advertising/campaign-management-service/offlineconversionadjustment?view=bingads-13 OfflineConversionAdjustment Data Object
      * 
      * @used-by ApplyOfflineConversionAdjustmentsRequest
      */
@@ -46,6 +46,18 @@ namespace Microsoft\BingAds\V13\CampaignManagement;
          * @var \DateTime
          */
         public $ConversionTime;
+
+        /**
+         * The hashed email address using the SHA-256 algorithm for use with enhanced conversions.
+         * @var string
+         */
+        public $HashedEmailAddress;
+
+        /**
+         * The hashed phone number according to the E.164 standard for use with enhanced conversions.
+         * @var string
+         */
+        public $HashedPhoneNumber;
 
         /**
          * The MSCLKID for the offline conversion.

@@ -5,7 +5,7 @@ namespace Microsoft\BingAds\V13\Reporting;
 {
     /**
      * Defines the attributes and performance statistics columns that you can include in the ProductSearchQueryPerformanceReportRequest.
-     * @link https://docs.microsoft.com/en-us/advertising/reporting-service/productsearchqueryperformancereportcolumn?view=bingads-13 ProductSearchQueryPerformanceReportColumn Value Set
+     * @link https:/learn.microsoft.com/advertising/reporting-service/productsearchqueryperformancereportcolumn?view=bingads-13 ProductSearchQueryPerformanceReportColumn Value Set
      * 
      * @used-by ProductSearchQueryPerformanceReportRequest
      */
@@ -169,6 +169,15 @@ namespace Microsoft\BingAds\V13\Reporting;
 
         /** The number of conversions. */
         const AllConversionsQualified = 'AllConversionsQualified';
+
+        /** The campaign type. */
+        const CampaignType = 'CampaignType';
+
+        /** The Microsoft Advertising assigned identifier of an asset group. */
+        const AssetGroupId = 'AssetGroupId';
+
+        /** The asset group name. */
+        const AssetGroupName = 'AssetGroupName';
     }
 
 }

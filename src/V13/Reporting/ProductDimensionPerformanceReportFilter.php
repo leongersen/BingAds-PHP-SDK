@@ -5,11 +5,12 @@ namespace Microsoft\BingAds\V13\Reporting;
 {
     /**
      * Defines the criteria to use to filter the product dimension performance report data.
-     * @link https://docs.microsoft.com/en-us/advertising/reporting-service/productdimensionperformancereportfilter?view=bingads-13 ProductDimensionPerformanceReportFilter Data Object
+     * @link https:/learn.microsoft.com/advertising/reporting-service/productdimensionperformancereportfilter?view=bingads-13 ProductDimensionPerformanceReportFilter Data Object
      * 
      * @uses AccountStatusReportFilter
      * @uses AdGroupStatusReportFilter
      * @uses AdStatusReportFilter
+     * @uses AssetGroupStatusReportFilter
      * @uses CampaignStatusReportFilter
      * @uses DeviceTypeReportFilter
      * @uses LanguageReportFilter
@@ -34,6 +35,12 @@ namespace Microsoft\BingAds\V13\Reporting;
          * @var AdStatusReportFilter
          */
         public $AdStatus;
+
+        /**
+         * The report will include data for only the asset group status.
+         * @var AssetGroupStatusReportFilter
+         */
+        public $AssetGroupStatus;
 
         /**
          * The report will include data for only the campaign status.

@@ -5,7 +5,7 @@ namespace Microsoft\BingAds\V13\Reporting;
 {
     /**
      * Defines the attributes and performance statistics columns that you can include in the ProductPartitionUnitPerformanceReportRequest.
-     * @link https://docs.microsoft.com/en-us/advertising/reporting-service/productpartitionunitperformancereportcolumn?view=bingads-13 ProductPartitionUnitPerformanceReportColumn Value Set
+     * @link https:/learn.microsoft.com/advertising/reporting-service/productpartitionunitperformancereportcolumn?view=bingads-13 ProductPartitionUnitPerformanceReportColumn Value Set
      * 
      * @used-by ProductPartitionUnitPerformanceReportRequest
      */
@@ -193,6 +193,18 @@ namespace Microsoft\BingAds\V13\Reporting;
 
         /** The revenue optionally reported by the advertiser as a result of view-through conversions. */
         const ViewThroughRevenue = 'ViewThroughRevenue';
+
+        /** The campaign type. */
+        const CampaignType = 'CampaignType';
+
+        /** The Microsoft Advertising assigned identifier of an asset group. */
+        const AssetGroupId = 'AssetGroupId';
+
+        /** The asset group name. */
+        const AssetGroupName = 'AssetGroupName';
+
+        /** The asset group status. */
+        const AssetGroupStatus = 'AssetGroupStatus';
     }
 
 }

@@ -5,7 +5,7 @@ namespace Microsoft\BingAds\V13\Reporting;
 {
     /**
      * Defines the attributes and performance statistics columns that you can include in the AccountPerformanceReportRequest.
-     * @link https://docs.microsoft.com/en-us/advertising/reporting-service/accountperformancereportcolumn?view=bingads-13 AccountPerformanceReportColumn Value Set
+     * @link https:/learn.microsoft.com/advertising/reporting-service/accountperformancereportcolumn?view=bingads-13 AccountPerformanceReportColumn Value Set
      * 
      * @used-by AccountPerformanceReportRequest
      */
@@ -259,6 +259,24 @@ namespace Microsoft\BingAds\V13\Reporting;
 
         /** Total watch time, in milliseconds, divided by the number of impressions. */
         const AverageWatchTimePerImpression = 'AverageWatchTimePerImpression';
+
+        /** Reserved. */
+        const Sales = 'Sales';
+
+        /** Reserved. */
+        const CostPerSale = 'CostPerSale';
+
+        /** Reserved. */
+        const RevenuePerSale = 'RevenuePerSale';
+
+        /** Reserved. */
+        const Installs = 'Installs';
+
+        /** Reserved. */
+        const CostPerInstall = 'CostPerInstall';
+
+        /** Reserved. */
+        const RevenuePerInstall = 'RevenuePerInstall';
     }
 
 }

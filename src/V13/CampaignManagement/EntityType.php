@@ -5,7 +5,7 @@ namespace Microsoft\BingAds\V13\CampaignManagement;
 {
     /**
      * Defines entity types for association and editorial service operations.
-     * @link https://docs.microsoft.com/en-us/advertising/campaign-management-service/entitytype?view=bingads-13 EntityType Value Set
+     * @link https:/learn.microsoft.com/advertising/campaign-management-service/entitytype?view=bingads-13 EntityType Value Set
      * 
      * @used-by AppealEditorialRejectionsRequest
      * @used-by DeleteLabelAssociationsRequest
@@ -27,6 +27,9 @@ namespace Microsoft\BingAds\V13\CampaignManagement;
 
         /** The entity is a keyword. */
         const Keyword = 'Keyword';
+
+        /** The entity is an asset group. */
+        const AssetGroup = 'AssetGroup';
     }
 
 }

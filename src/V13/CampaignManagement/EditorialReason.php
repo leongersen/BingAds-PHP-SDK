@@ -5,7 +5,7 @@ namespace Microsoft\BingAds\V13\CampaignManagement;
 {
     /**
      * Defines an object that you can use to determine the component of an ad or keyword that failed editorial review, and the reason for the failure.
-     * @link https://docs.microsoft.com/en-us/advertising/campaign-management-service/editorialreason?view=bingads-13 EditorialReason Data Object
+     * @link https:/learn.microsoft.com/advertising/campaign-management-service/editorialreason?view=bingads-13 EditorialReason Data Object
      * 
      * @used-by EditorialReasonCollection
      */
@@ -18,7 +18,7 @@ namespace Microsoft\BingAds\V13\CampaignManagement;
         public $Location;
 
         /**
-         * A list of countries where the ad or keyword failed editorial review.
+         * A list of countries or regions where the ad or keyword failed editorial review.
          * @var string[]
          */
         public $PublisherCountries;

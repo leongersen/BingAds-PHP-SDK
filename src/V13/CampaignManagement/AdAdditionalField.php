@@ -5,7 +5,7 @@ namespace Microsoft\BingAds\V13\CampaignManagement;
 {
     /**
      * Defines a list of optional ad properties that you can request when calling GetAdsByAdGroupId, GetAdsByEditorialStatus, and GetAdsByIds.
-     * @link https://docs.microsoft.com/en-us/advertising/campaign-management-service/adadditionalfield?view=bingads-13 AdAdditionalField Value Set
+     * @link https:/learn.microsoft.com/advertising/campaign-management-service/adadditionalfield?view=bingads-13 AdAdditionalField Value Set
      * 
      * @used-by GetAdsByAdGroupIdRequest
      * @used-by GetAdsByEditorialStatusRequest
@@ -21,6 +21,9 @@ namespace Microsoft\BingAds\V13\CampaignManagement;
 
         /** Request that the LongHeadlines element be included within each returned ResponsiveAd object. */
         const LongHeadlines = 'LongHeadlines';
+
+        /** Reserved. */
+        const ImageTargetDimension = 'ImageTargetDimension';
     }
 
 }

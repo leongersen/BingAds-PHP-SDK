@@ -5,9 +5,10 @@ namespace Microsoft\BingAds\V13\CustomerBilling;
 {
     /**
      * Defines a Customer Billing operation error object that contains the details that explain why the service operation failed.
-     * @link https://docs.microsoft.com/en-us/advertising/customer-billing-service/operationerror?view=bingads-13 OperationError Data Object
+     * @link https:/learn.microsoft.com/advertising/customer-billing-service/operationerror?view=bingads-13 OperationError Data Object
      * 
      * @used-by ApiFault
+     * @used-by ClaimFeatureAdoptionCouponsResponse
      */
     final class OperationError
     {

@@ -5,7 +5,7 @@ namespace Microsoft\BingAds\V13\Bulk;
 {
     /**
      * Defines the entities that may be downloaded and uploaded in bulk.
-     * @link https://docs.microsoft.com/en-us/advertising/bulk-service/downloadentity?view=bingads-13 DownloadEntity Value Set
+     * @link https:/learn.microsoft.com/advertising/bulk-service/downloadentity?view=bingads-13 DownloadEntity Value Set
      * 
      * @used-by DownloadCampaignsByAccountIdsRequest
      * @used-by DownloadCampaignsByCampaignIdsRequest
@@ -446,6 +446,33 @@ namespace Microsoft\BingAds\V13\Bulk;
 
         /** Reserved. */
         const AdGroupHotelListingGroups = 'AdGroupHotelListingGroups';
+
+        /** Array of asset groups to add to the specified campaign. */
+        const AssetGroups = 'AssetGroups';
+
+        /** Array of audience groups. */
+        const AudienceGroups = 'AudienceGroups';
+
+        /** Defines a negative site assigned to an campaign that can be uploaded and downloaded in a bulk file. */
+        const CampaignNegativeWebpages = 'CampaignNegativeWebpages';
+
+        /** The list of Audience Group associations. */
+        const AudienceGroupAssetGroupAssociations = 'AudienceGroupAssetGroupAssociations';
+
+        /** The list of listing groups that correspond directly to the identifiers specified in the request. */
+        const AssetGroupListingGroups = 'AssetGroupListingGroups';
+
+        /** Reserved. */
+        const LogoAdExtensions = 'LogoAdExtensions';
+
+        /** Reserved. */
+        const AccountLogoAdExtensions = 'AccountLogoAdExtensions';
+
+        /** Reserved. */
+        const CampaignLogoAdExtensions = 'CampaignLogoAdExtensions';
+
+        /** Reserved. */
+        const AdGroupLogoAdExtensions = 'AdGroupLogoAdExtensions';
     }
 
 }
